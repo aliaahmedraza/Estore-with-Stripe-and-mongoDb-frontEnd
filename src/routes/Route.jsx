@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
 import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/clerk-react";
-import ProductsList from "../components/Products/ProductsList";
 import Clerk from "../pages/Clerk/ClerkSignIn";
 import Cart from "../pages/Cart/Cart.jsx";
 import StripePayment from "../pages/StripePayment/StripePayment.jsx";
 import Success from "../pages/StripeSuccess/StripeSuccess.jsx";
 import Cancel from "../pages/StripeFailure/StripeFailure.jsx";
+import Dashboard from "../pages/Dashboard/Dashboard.jsx";
 
 function AppRouters() {
   return (
@@ -16,7 +16,7 @@ function AppRouters() {
         element={
           <>
             <SignedIn>
-              <ProductsList />
+              <Dashboard />
             </SignedIn>
             <SignedOut>
               <RedirectToSignIn />

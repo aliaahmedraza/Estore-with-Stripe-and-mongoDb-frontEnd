@@ -18,7 +18,7 @@ export default function StripePayment() {
 
       // Request checkout session from backend
       const response = await fetch(
-        "http://localhost:4000/create-checkout-session",
+        "https://estore-with-stripe-and-mongodb-backend.onrender.com/create-checkout-session",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

@@ -113,14 +113,14 @@ const CartReport = () => {
         loading ? (
           "Generating PDF..."
         ) : (
-          <span className="border-2 text-gray-600 font-bold flex px-1 h-7 items-end gap-1 rounded hover:text-black">
+          <span className="border-1 border-gray-400 text-gray-600 font-bold flex px-4 py-2 rounded-md gap-x-0.5 hover:text-black">
             <>Report</> <AiFillFilePdf className="text-2xl" />
           </span>
         )
       }
     </PDFDownloadLink>
   ) : (
-    <span className="border-2 text-gray-400 font-bold flex px-1 h-7 items-end gap-1 rounded cursor-not-allowed">
+    <span className="border-1 border-gray-400 text-gray-400 font-bold flex px-4 py-2 rounded-md gap-x-0.5 cursor-not-allowed">
       <>Report</> <AiFillFilePdf className="text-2xl" />
     </span>
   );
